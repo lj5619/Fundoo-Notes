@@ -5,7 +5,6 @@ from notes import route as notes_route
 from label.route import label_router
 
 Base.metadata.create_all(bind=engine)
-
 app = FastAPI()
 
 app.include_router(user_route.router)
